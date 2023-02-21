@@ -1,0 +1,13 @@
+name: Manual-Actions-Workflow
+
+on:
+  workflow_dispatch
+
+jobs:
+  
+  build:
+      runs-on: ubuntu
+      
+      steps: uses/checkout@2
+    - name: say something
+      run: echo " this is manual approval working"
